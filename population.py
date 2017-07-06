@@ -21,7 +21,7 @@ class Gene(object):
 
     def calc_distances(self):
         """
-            počíta vzdialenosti do všetkých ostatných miest
+            calculate distances to every city 
         """
 
         for gene in settings.genes:
@@ -31,7 +31,7 @@ class Gene(object):
 
     def euclidian_distance(self, x1, y1, x2, y2):
         """ 
-            počítanie euklidovskej vzdialenosti
+            calculate euclidian distance
         """
         deltax = abs(x1 - x2)
         deltay = abs(y1 - y2)
@@ -39,14 +39,16 @@ class Gene(object):
 
     def manhattan_distance(self, x1, y1, x2, y2):
         """ 
-            počítanie manhatanskej vzdialenosti
+            calculate manhattan distance
         """
         deltax = abs(x1 - x2)
         deltay = abs(y1 - y2)
         return int(deltax+deltay)
 
 class Chromosome(object):
-
+    """
+        
+    """
     def __init__(self):
         self.route = sorted(settings.genes, key=lambda *args: random.random())
         self.calc_length()
@@ -75,6 +77,10 @@ class Chromosome(object):
 
 
 class Population(object):
+    """
+    
+    """
+    
     def __init__(self, size, init):
         self.size = size
         self.chromosomes = []
