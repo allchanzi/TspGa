@@ -1,12 +1,11 @@
-spustenie programu >python gui.py
+run > python gui.py
 
-format vstupného súboru CSV odde¾ovaè , 
-príklad 
+CSV format "," separator
+e.g.
 1,1
 2,2
 3,3 
 
-prilozene cvicne csv subory v adresary data
-berlin52. csv - obsahuje 52 lokácii v berlíne
+berlin52. csv - 52 locations in Berlin
 eil101.csv - 101-city problem (Christofides/Eilon)
-skuska.csv - nahodných 24 bodov ktoré som vybral 
+skuska.csv - my random 24 points 
